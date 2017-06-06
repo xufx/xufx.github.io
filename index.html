@@ -300,7 +300,7 @@ public void setSecond(T newValue){ second=newValue;}
 <p>public class Pair<t,u>{};</t,u></p>
 <p>Pair<string><br>Pair<string>()<br>Pair<string>(String,String)<br>String getFirst()<br>String getSecond()<br>void setFirst(String)<br>void setSecond(String)<br>泛型类可以看做普通类的工厂</string></string></string></p>
 <p>package pair1;<br>public class PairTest1()<br>{<br>    String[] words={“Mary”,”had”,”a”,”little”,”lamb”};<br>    Pair<string> mm=ArrayAlg.minmax(words);<br>    System.out.println(“min=”+mm.getFirst());<br>    System.out.println(“max=”+mm.getSecond());<br>}<br>class ArrayAlg<br>{<br>    public static Pair<string> minmax(String[] a)<br>    {<br>        if(a==null || a.length==0)return null;<br>        String min=a[0]<br>        String max=a[0];<br>        for(int i=1;i<a.length;i++) {="" if(min.compareto(a[i]="">0))min=a[i];<br>            if(max.compareTo(a[i]<0))max=a[i]; }="" return="" new="" pair<="">(min,max);<br>    }<br>}</0))max=a[i];></a.length;i++)></string></string></p>
-<p>定义一个带有类型参数的简单方法<br>class ArrayAlg<br>{<br>    public static <t> T getMiddle(T…a)<br>    {<br>    return a[a.length/2];<br>    }<br>}<br>泛型方法可以定义在简单类中，也可以定义在泛型类中<br>调用泛型方法<br>String middle=ArrayAlg.<string>getMiddle(“John”,”Q”,”Public”);<br>double middle=ArrayAlg.getMiddle(3.14,1729,0);</string></t></p>
+<p>定义一个带有类型参数的简单方法<br>class ArrayAlg<br>{<br>    public static <t> T getMiddle(T…a)<br>    {<br>    return a[a.length/2];<br>    }<br>}<br>泛型方法可以定义在简单类中，也可以定义在泛型类中<br>调用泛型方法<br>String middle=ArrayAlg.<string>getMiddle(“John”,”Q”,”Public”);<br>double middle=ArrayAlg.getMiddle(3.14,1729,0);<br>类型变量的限定<br>class</string></t></p>
 
       
     </div>
